@@ -52,7 +52,7 @@ class Ball(pygame.sprite.Sprite):
         def __init__(self):
                 global score_time
                 pygame.sprite.Sprite.__init__(self)
-                self.image = pygame.image.load("img/ball.png")
+                self.image = pygame.image.load("ball.png")
                 self.image = pygame.transform.scale(self.image, (30, 30))
                 self.rect = self.image.get_rect()
                 self.rect.center = (WIDTH / 2, HEIGHT / 2)
